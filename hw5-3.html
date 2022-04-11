@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let x = [0.3, 5.2, 9.4, 8];
+        let y = [43,5,3.4, 8, 20];
+
+        function summ(x,y){
+            let s1 = x.reduce((sum,current)=>sum+current,0);
+            let s2 = y.reduce((sum,current)=>sum+current,0);
+
+            let s3 = (s1+s2)/2;
+
+            return s3;
+        }
+
+        console.log(summ(x,y));
+
+
+    </script>
+</body>
+</html>

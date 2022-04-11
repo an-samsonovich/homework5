@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let m = +prompt('Введите число M');
+        let n = +prompt('Введите число N');
+
+        function sumFakt(m,n) {
+            let k=1;
+            let k1=1;
+            let k2=m+1;
+            let k3=1;
+
+            for(i=1;i<=m;i++)  k*=i;
+        
+            for(j=1;j<=n;j++) k1*=j;
+
+            for(g=1;g<=k2;g++) k3*=g;
+
+            let c = (k+k1)/k3;
+
+            return c;
+
+
+
+        }
+
+        console.log(sumFakt(m,n));
+
+
+        
+
+        
+    </script>
+</body>
+</html>
